@@ -1,0 +1,103 @@
+.quizContainer {
+  background: linear-gradient(115deg, #c1e7f5, #FFFDFA);
+  min-height: 100vh;
+  min-width: 100vw;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.questionNumber {
+  width: 369px;
+  margin-bottom: 8px;
+  margin-top: 16px;
+  font-family: Arial;
+  font-size: 16px;
+  color: #17668C;
+}
+.progressBarContainer {
+    width: 365px;
+    height: 20px; /* Adjust height as needed */
+    background-color: transparent; 
+    border: solid 3px #17668C;
+    border-radius: 30px;
+    margin-bottom: 24px;
+  }
+  
+ .progressBarSegment {
+    height: 100%;
+    background: linear-gradient(45deg, #A0E4FF, #17668C); 
+    border-radius: 30px;
+    transition: width 0.5s ease-in-out;
+  }
+
+  .questions {
+    display: flex;
+    flex-direction: column;
+    width: 369px;
+    background-color: #FFFDFA;
+    box-shadow: 1px 5px 10px 3px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    border-radius: 32px;
+    gap: 16px;
+  }
+
+  .questions > p {
+    text-align: center;
+    margin: 40px 16px 32px 16px;
+    font-size: 24px;
+    font-family: Arial;
+    color: #17668C;
+    font-weight: bold;
+  }
+
+  .questions > button {
+    width: 90%;
+    height: 56px;
+    border-radius: 32px;
+    box-shadow: 1px 5px 10px 3px rgba(0, 0, 0, 0.25);
+    border: none;
+    font-family: Arial;
+    font-size: 20px;
+    background-color: #FFFDFA;
+    color: #17668C;
+  }
+
+  .bobAnimation {
+    animation: bobUpDown 2s infinite;
+    margin-top: 40px;
+  }
+  
+  @keyframes bobUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .navigateQuiz {
+    width: 335px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    margin-bottom: 32px;
+  }
+
+  .navigateQuiz > button {
+    border-radius: 32px;
+    box-shadow: 1px 5px 10px 3px rgba(0, 0, 0, 0.25);
+    border: none;
+    font-family: Arial;
+    font-size: 20px;
+    background-color: #A0E4FF;
+    color: #17668C;
+    padding: 0px 24px;
+    height: 56px;
+  }
+  

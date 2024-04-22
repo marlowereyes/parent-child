@@ -1,5 +1,10 @@
-import "@/styles/globals.css";
+// app/layout.jsx
+import { lexend } from '../fonts'
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en" className={lexend.className}>
+      <body>{children}</body>
+    </html>
+  )
 }
